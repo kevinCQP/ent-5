@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -5,9 +8,13 @@
   margin: 0;
   padding: 0;
 }
+html{
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+}
 body{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 img{
   display: inline-block;
@@ -28,10 +35,4 @@ a{
 }
 span{
   color: red;
-}
-.hola{
-  background-color: none;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
 }

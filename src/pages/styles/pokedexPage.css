@@ -1,3 +1,26 @@
+.fondo_1{
+    position: relative;
+}
+.fondo_rojo_1{
+    height: 30px;
+    background-color: red;
+    width: 100%;
+    
+}
+.poke_page_img{
+  width: 180px;
+  max-width: 100%;
+  height: auto;
+}
+.fondo_negro_1{
+    top: 30px;
+    height: 15px;
+    background-color: black;
+    width: 100%;
+    position: absolute;
+    
+}
+
 .pokedex{
     padding-bottom: 25px;
 }

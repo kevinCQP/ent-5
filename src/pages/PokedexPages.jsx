@@ -5,6 +5,8 @@ import useFetch from '../hooks/useFetch';
 import PokeCards from '../components/pokedexPage/PokeCards';
 import SelecType from '../components/pokedexPage/SelecType';
 import './styles/pokedexPage.css'
+
+
 const PokedexPages = () => {
 
   const [selectValue, setSelectValue] = useState('allpokemons');
@@ -40,18 +42,28 @@ const PokedexPages = () => {
     }
  
   return (
-    <div className='pokedex'>
-      <section className='poke_head'>
-       <h3><span>Bienvenido {traineName}, </span>aqui pondras encontrar tu pokemon favorito</h3>
-        <div>
-         <form onSubmit={handleSubmit}>
-          <input type="text" ref={textImput} />
-          <button>Buscar</button>
-         </form>
-           <SelecType
+    
+  <div>
+    <div className='fondo_1'>
+       <div className='fondo_rojo_1'>
+         <figure  >
+          <img  className='poke_page_img' src="..\assets\pokedex.png" alt="pokedex" />
+         </figure>
+       </div>
+       <div className='fondo_negro_1'></div>
+    </div>
+      <div className='pokedex'>
+       <section className='poke_head'>
+        <h3><span>Bienvenido {traineName}, </span>aqui pondras encontrar tu pokemon favorito</h3>
+         <div className='container'>
+          <form onSubmit={handleSubmit}>
+           <input type="text" ref={textImput} />
+           <button>Buscar</button>
+          </form>
+            <SelecType
             setSelectValue ={setSelectValue}
-           />
-        </div>
+            />
+         </div>
       </section>
       <section className='poke_container'>
         {
@@ -59,10 +71,11 @@ const PokedexPages = () => {
             <PokeCards
             key={poke.url}
             url={poke.url}/>
-          ))
-        }
-      </section>
-    </div>
+           ))
+         }
+       </section>
+      </div>
+     </div>
   )
 }
 

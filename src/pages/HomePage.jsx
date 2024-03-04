@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import {setTrainerName} from '../store/slices/trainerName.slice';
 import { useDispatch, useSelector } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
-
+import '../pages/styles/homePage.css'
 
 
 const HomePage = () => {
@@ -21,14 +21,22 @@ const HomePage = () => {
   }
   
   return (
-    <div className='hola'>
-      <h1>Hola entrenador</h1>
-      <h2>para poder comenzar dame tu nombre</h2>
-      <form onSubmit={ponerMano}>
-        <input type="text" ref={textoIntro} />
-        <button>Comenzar</button>
-      </form>
+    <div className='hello'>
+      <figure  >
+        <img  className='img_pokedex' src="..\assets\pokedex.png" alt="pokedex" />
+      </figure>
+       <h1>¡Hola entrenador!</h1>
+       <h2>Para poder comenzar dame tu nombre</h2>
+        <form onSubmit={ponerMano}>
+         <input type="text" ref={textoIntro} />
+         <button>Comenzar</button>
+        </form>
+      <div className='fondo_pie'></div>
+      <section className='fondo_nigga'></section>
+      <section className=''></section>
+      
     </div>
+    
   )
 }
 

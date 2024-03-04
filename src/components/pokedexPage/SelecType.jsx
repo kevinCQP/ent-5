@@ -20,7 +20,7 @@ const SelecType = ({setSelectValue}) => {
     
   return (
     <select onChange={cambioMano}  ref={textSelection}>
-        <option value="allPokemons">alla pokemons</option>
+        <option value="allPokemons">All Pokemons</option>
         {
           tipos?.results.map(tipo=>(
             <option key={tipo.url}

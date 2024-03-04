@@ -12,10 +12,10 @@ const PokeCards = ({url}) => {
     const handleClick =()=>{
       navegacion(`/pokedex/${pokemon.id}`);
     }
-    //console.log(pokemon)
+    console.log(pokemon)
   return (
     <article onClick={handleClick} className='poke_card'>
-      <div></div>
+      <div className={pokemon?.types[0].type.name}></div>
         <figure>
           <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="pokemon imagen" />
         </figure>
