@@ -46,11 +46,16 @@ const PokedexPages = () => {
   <div>
     <div className='fondo_1'>
        <div className='fondo_rojo_1'>
+       
          <figure  >
           <img  className='poke_page_img' src="..\assets\pokedex.png" alt="pokedex" />
          </figure>
        </div>
-       <div className='fondo_negro_1'></div>
+       <div className='fondo_negro_1'>
+          <div className='pokebola'></div>
+           <div className='poke_2'></div>
+           
+       </div>
     </div>
       <div className='pokedex'>
        <section className='poke_head'>

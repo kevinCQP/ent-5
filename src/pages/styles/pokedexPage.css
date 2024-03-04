@@ -3,10 +3,12 @@
 }
 .fondo_rojo_1{
     height: 30px;
-    background-color: red;
     width: 100%;
     
+    background-color: red;
 }
+
+
 .poke_page_img{
   width: 180px;
   max-width: 100%;
@@ -18,7 +20,30 @@
     background-color: black;
     width: 100%;
     position: absolute;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pokebola{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    right: 100px;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poke_2{
+    position: absolute;
+    height: 65px;
+    width: 65px;
+    background-color: black;
+    right: 88px;
+    border-radius: 50%;
+    z-index: 1;
 }
 
 .pokedex{

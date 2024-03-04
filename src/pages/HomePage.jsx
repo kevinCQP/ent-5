@@ -33,7 +33,7 @@ const HomePage = () => {
         </form>
       <div className='fondo_pie'></div>
       <section className='fondo_nigga'></section>
-      <section className=''></section>
+      
       
     </div>
     
